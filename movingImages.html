@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moving Images</title>
+    <script src="./Js/movingImages.js"></script>
+    <style>
+      .center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+      .container {
+        border: 5px solid rgb(92, 0, 57);
+        border-radius: 10px;
+        width: 500px;
+        height: 500px;
+        min-width: 300px;
+        min-height: 300px;
+        position: relative;
+        margin-bottom: 20px; /* Add space between container and buttons */
+      }
+      .btns {
+        display: flex;
+        gap: 20px; /* Add space between buttons */
+      }
+      img {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        margin: 0%;
+      }
+      #img1 {
+        top: calc((450px) / 2);
+      }
+      #img2 {
+        top: calc((450px) / 2);
+        right: 0%;
+      }
+      #img3 {
+        left: calc(450px / 2);
+        bottom: 0%;
+      }
+      input {
+        font-size: 25px;
+        padding: 10px;
+        background-color: rgb(80, 114, 116);
+        border: none;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="center">
+      <div class="container">
+        <img id="img1" class="horizontal" src="./images/icon1.gif" alt="" />
+        <img id="img2" class="horizontal" src="./images/icon2.gif" alt="" />
+        <img id="img3" class="vertical" src="./images/TOP.JPG" alt="" />
+      </div>
+      <div class="btns">
+        <input id="startBtn" type="button" value="Start/Stop" />
+        <input id="resetBtn" type="button" value="Reset" />
+      </div>
+    </div>
+  </body>
+</html>

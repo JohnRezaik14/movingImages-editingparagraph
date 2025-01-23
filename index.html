@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 6</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script>
+      function clicked(input) {
+        window.open(`${input.src}`);
+      }
+    </script>
+  </head>
+  <body>
+    <input
+      class="task btn"
+      id="movImg"
+      type="button"
+      value="Moving Images"
+      src="./movingImages.html"
+      onclick="clicked(this)"
+    />
+    <input
+      class="task btn"
+      id="CustPara"
+      type="button"
+      value="Customize Paragraph"
+      src="./Change_Text_Style.html"
+      onclick="clicked(this)"
+    />
+  </body>
+</html>
